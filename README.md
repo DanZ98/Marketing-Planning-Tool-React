@@ -5,7 +5,7 @@ A static React TypeScript application of the Ace Hardware Tiles Dashboard, featu
 ## 🚀 Features
 
 -   **Responsive Design**: Bootstrap-integrated responsive layout that works across devices
--   **Real-time Investment Tracking**: Display of total invested and remaining budget
+-   **Investment Tracking**: Display of total invested and remaining budget
 -   **Modular Component Structure**: Reusable React components
 -   **SCSS Styling**: Maintained original design with organized SCSS architecture
 -   **Type Safety**: Full TypeScript implementation for better development experience
@@ -85,6 +85,7 @@ This React TypeScript version adds:
 
 ## 📄 Original Resources
 
+-   React: https://react.dev/
 -   Bootstrap: https://getbootstrap.com/
 -   Google Fonts: https://fonts.google.com/
 -   Sass: https://sass-lang.com/
