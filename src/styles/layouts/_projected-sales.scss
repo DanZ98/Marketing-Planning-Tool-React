@@ -1,0 +1,54 @@
+@use "../abstracts/forward" as *;
+
+/**********************************
+Projected Sales Section
+**********************************/
+/*Projected sales section*/
+.menu-pagination {
+	&__ul {
+		@include displayFlexCenter;
+		margin: 1.4rem 0 2.9rem 0;
+        padding-left: 0;
+	}
+
+	&__li {
+		@include paginationDots;
+
+		&.active {
+			background-color: $color-red-ace;
+		}
+	}
+
+	&__li:nth-child(1),
+	&__li:nth-child(2) {
+		background-color: $color-red-ace;
+	}
+}
+
+.projected-sales {
+	margin: 0 2rem;
+
+	&__based,
+	&__brand-assessment,
+	&__plan-invested {
+		margin-bottom: 0.7rem;
+		font-size: 2.1rem;
+		color: $color-md-gray;
+		text-align: center;
+		line-height: $lineHeight;
+	}
+
+	&__tiles-amount {
+		color: $color-red-ace;
+	}
+
+	&__plan-invested {
+		margin-top: 3.2rem;
+	}
+
+	&__marketing-initiative {
+		text-align: center;
+		color: #8b8b8b;
+		margin-bottom: 3.5rem;
+	}
+}

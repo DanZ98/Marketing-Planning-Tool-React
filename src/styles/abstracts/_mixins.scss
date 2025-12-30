@@ -1,0 +1,77 @@
+@use "variables" as *;
+
+/* ######################## 
+    Mixins
+ ######################## */
+
+/* Display fex center */
+@mixin displayFlexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Font Weight */
+@mixin fontWeight($weight) {
+	font-weight: $weight;
+}
+
+/* Border Radius */
+@mixin borderRadius {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+@mixin planCardBoostrap() {
+	position: relative;
+	width: 100%;
+	height: 23.2rem;
+	font-size: 1.6rem;
+	text-align: center;
+	color: $color-md-gray;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	-ms-border-radius: 18px;
+	border-radius: 18px;
+}
+
+/* Back Btn */
+@mixin backBtn() {
+	width: 12rem;
+	height: 3.9rem;
+	background-color: $backBtnGray;
+	color: $color-white;
+	border: none;
+	@include borderRadius;
+	font-size: $fontsize-16;
+	font-family: $fontfamily-Roboto;
+}
+
+@mixin nextBtn() {
+	width: 12rem;
+	height: 3.9rem;
+	background-color: $color-red-ace;
+	color: $color-white;
+	border: none;
+	@include borderRadius;
+	font-size: $fontsize-16;
+	font-family: $fontfamily-Roboto;
+}
+
+/* Pagination Dots */
+@mixin paginationDots() {
+	list-style: none;
+	border: 1px solid #d40029;
+	width: 1.4rem;
+	height: 1.4rem;
+	border-radius: 50%;
+	margin: 0rem 0.5rem;
+}
+
+@mixin cardExpandEffect() {
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}

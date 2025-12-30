@@ -1,0 +1,11 @@
+// Import base styles first
+@use "base/reset";
+
+// Import abstracts
+@use "abstracts/forward";
+
+// Import layouts
+@use "layouts/header";
+@use "layouts/projected-sales";
+@use "layouts/tiles-dashboard";
+@use "layouts/footer";

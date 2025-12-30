@@ -1,0 +1,192 @@
+@use "../abstracts/forward" as *;
+
+/**********************************
+Tile Dashboard Section
+**********************************/
+/*Tiles section*/
+.col-card {
+	margin-bottom: 4rem;
+}
+
+.tiles {
+	margin: 0 2rem;
+
+	&__card {
+		@include planCardBoostrap;
+		-webkit-transition: $transition-effect;
+		-moz-transition: $transition-effect;
+		transition: $transition-effect;
+		-webkit-box-shadow: rgb(204, 204, 204) 0rem 0rem 1rem 0rem;
+		-moz-box-shadow: rgb(204, 204, 204) 0rem 0rem 1rem 0rem;
+		box-shadow: rgb(204, 204, 204) 0rem 0rem 1rem 0rem;
+		font-size: 2.4rem;
+	}
+
+	&__card:hover {
+		cursor: pointer;
+		@include cardExpandEffect;
+	}
+
+	&__card--invested {
+		pointer-events: none;
+		border: 1px solid $color-red-ace !important;
+	}
+
+	.card-img-container {
+		height: 8.4rem;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-moz-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-moz-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	&__img {
+		margin-top: 1.5rem;
+	}
+
+	&__img--otherlocal {
+		max-width: 12.9rem;
+		width: 100%;
+		height: auto;
+		margin-bottom: 0.8rem;
+	}
+
+	&__img--grandopening {
+		max-width: 10rem;
+		width: 100%;
+		height: auto;
+	}
+
+	.card-body {
+		width: 100%;
+		max-width: 23.6rem;
+		margin: 0 auto;
+	}
+
+	&__status {
+		position: absolute;
+		right: 0;
+	}
+
+	&__targeted {
+		margin: 0.3rem 0;
+		font-size: 1.4rem;
+		color: $color-md-gray;
+		line-height: $lineHeight;
+		height: 3.6rem;
+	}
+
+	&__target-header {
+		height: 1.8rem;
+	}
+
+	&__targeted--newstore {
+		margin-top: 0.8rem;
+	}
+
+	&__card--invested {
+		overflow: hidden;
+		box-shadow: none;
+		border: 1px solid #d1d1d1;
+	}
+
+	&__percentage {
+		margin-bottom: 1.6rem;
+		font-size: 4.6rem;
+		color: $color-black;
+	}
+
+	&__rewards-value {
+		margin-bottom: 1.6rem;
+		color: $color-md-gray;
+		font-size: 1.8rem;
+	}
+
+	&__invested-label {
+		padding-top: 0.8rem;
+		margin-bottom: 0;
+		color: #8b8b8b;
+		font-size: $fontsize-16;
+		line-height: normal;
+	}
+
+	&__invested-value {
+		margin-top: 0.2rem;
+		margin-bottom: 1.1rem;
+		font-size: 2.4rem;
+		color: $color-black;
+		line-height: normal;
+	}
+
+	&__remain-label {
+		margin-bottom: 0;
+		font-size: 1.6rem;
+		color: $color-red-ace;
+		line-height: normal;
+	}
+
+	&__remain-value {
+		color: $color-red-ace;
+	}
+
+	&__footer {
+		margin-top: 1.5rem;
+		height: 100vh;
+		background-color: #eee;
+	}
+
+	&__ul-container {
+		margin-top: 0.5rem;
+		justify-content: center;
+		@include displayFlexCenter;
+	}
+
+	&__additional-opp {
+		margin-bottom: 0;
+		font-size: 1.6rem;
+		text-align: center;
+		padding-top: 1.3rem;
+		color: $color-black;
+	}
+
+	&__addtional-ul {
+		font-size: 1.6rem;
+		margin-top: 0.4rem;
+		line-height: normal;
+		color: $color-black;
+		text-align: left;
+		list-style: initial;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.tiles__card {
+		height: 26.8rem;
+	}
+
+	.tiles__targeted {
+		height: 7.2rem;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.tiles__invested-value,
+	.tiles__remain-value {
+		font-size: 2rem;
+	}
+
+	.tiles__remain-value {
+		margin-bottom: 0;
+	}
+}

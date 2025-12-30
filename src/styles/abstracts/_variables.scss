@@ -1,0 +1,50 @@
+/* ######################## 
+    Global Styles
+ ######################## */
+
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	/* Set root font size to 10px. Easier to calculate in REM units by 10 */
+	font-size: 62.5%;
+	/*Add smooth scrolling effect*/
+	scroll-behavior: smooth;
+}
+
+body {
+	/* Set body font size to 16px */
+	font-size: 1.6rem;
+	font-family: "Roboto", "Helvetica", Arial, "Lucida Grande", sans-serif;
+}
+
+/* ######################## 
+    Variables
+ ######################## */
+
+/*Colors*/
+$color-red-ace: #d40029;
+$color-black: #000;
+$color-white: #fff;
+$color-md-gray: #373a3c;
+$backBtnGray: #333333;
+$blueLink: #007bff;
+
+/* Font Size */
+$fontsize-21: 2.1rem;
+$fontsize-16: 1.6rem;
+
+/* Font Family */
+$fontfamily-Roboto: "Roboto", "Helvetica", Arial, "Lucida Grande", sans-serif;
+$fontfamily-RobotoSlab: "Roboto Slab", Arial, Arial, Helvetica, sans-serif;
+$fontfamily-RobotoCondensed: "Roboto Condensed", Arial, Arial, Helvetica, sans-serif;
+
+$lineHeight: normal;
+
+// Effects
+$transition-effect: ease all 0.4s;

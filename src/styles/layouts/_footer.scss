@@ -1,0 +1,87 @@
+@use "../abstracts/forward" as *;
+
+/**********************************
+Footer Section
+**********************************/
+/*Tiles footer section*/
+.tiles-footer {
+	&__btn-container {
+		margin-top: 2.4rem;
+		text-align: center;
+	}
+
+	&__btn {
+		margin: 0 1.5rem 2rem 1.5rem;
+	}
+
+	&__btn--back-btn {
+		-webkit-transition: $transition-effect;
+		-moz-transition: $transition-effect;
+		transition: $transition-effect;
+		@include backBtn;
+	}
+
+	&__btn--back-btn::before {
+		border-style: solid;
+		border-width: 0.2rem 0.2rem 0 0;
+		content: "";
+		display: inline-block;
+		height: 1.1rem;
+		right: 0.5rem;
+		position: relative;
+		top: 0.06rem;
+		-webkit-transform: rotate(230deg);
+		transform: rotate(226deg);
+		width: 1.2rem;
+		color: $color-white;
+		right: 0.3rem;
+		opacity: 0.95;
+	}
+
+	&__btn--back-btn:hover {
+		background-color: #000;
+	}
+
+	&__btn--next-btn {
+		@include nextBtn;
+		-webkit-transition: $transition-effect;
+		-moz-transition: $transition-effect;
+		transition: $transition-effect;
+	}
+
+	&__btn--next-btn::after {
+		border-style: solid;
+		border-width: 0.2rem 0.2rem 0 0;
+		content: "";
+		display: inline-block;
+		height: 1.1rem;
+		right: 0.5rem;
+		position: relative;
+		top: 0.06rem;
+		-webkit-transform: rotate(46deg);
+		transform: rotate(46deg);
+		width: 1.2rem;
+		color: #fff;
+		right: -0.25rem;
+		opacity: 0.95;
+	}
+
+	&__btn--next-btn:hover {
+		background-color: #ae0022;
+	}
+
+	&__link-container {
+		margin: 2.7rem 2rem 8.2rem 2rem;
+		text-align: center;
+	}
+
+	&__link {
+		font-size: 1.4rem;
+		color: $blueLink;
+		text-decoration: underline;
+	}
+
+	&__link:hover {
+		color: $blueLink;
+	}
+}
